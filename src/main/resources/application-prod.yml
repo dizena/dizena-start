@@ -1,0 +1,16 @@
+#prod
+knife4j:
+  enable: false
+spring:
+  redis:
+    database: 2
+    host: localhost
+    port: 6379
+    password: xxxxx
+  data:
+    mongodb:
+      uri: mongodb://xxx:xxxx@localhost:3717/xxx
+      auto-index-creation: true
+#config logback filepath
+logback:
+  path: C:/logs/center

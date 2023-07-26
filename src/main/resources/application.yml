@@ -1,0 +1,26 @@
+#common
+server:
+  port: 56789
+  compression:
+    enabled: true
+    mime-types: application/json,application/xml,text/html,text/xml,text/plain
+    min-response-size: 2000
+  tomcat:
+    max-threads: 1000
+    uri-encoding: UTF-8
+#common
+spring:
+  application:
+    name: dizena-start
+  profiles:
+    active: @profile.active@
+  session:
+    store-type: none
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 300MB
+      enabled: true
+#common
+logging:
+  config: classpath:logback-spring.xml
